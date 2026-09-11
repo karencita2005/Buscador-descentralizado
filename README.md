@@ -12,6 +12,7 @@ los propios usuarios.
 
 # 2. Objetivo general y objetivos particulares 
 ¿Qué resultado concreto quieren conseguir con el proyecto? 
+
 El objetivo principal de este proyecto es desarrollar un buscador descentralizado basado en
 una red nodos P2P que permita a los usuarios acceder a información de forma transparente, equitativa y sin depender de una entidad central.
 
@@ -27,10 +28,12 @@ Objetivos particulares
 
 # 3. Alcance
 ¿Qué sí contempla el proyecto?
+
 El alcance del proyecto modular contempla el diseño e implementación de un motor de búsqueda distribuido con arquitectura peer-to-peer (P2P), limitando su operación exclusivamente a una red controlada como los dominios de la UDG. Para lograrlo, se construirá una red de nodos autónomos que funcionarán de manera simultánea como clientes y servidores, encargándose cada uno de rastrear, indexar y almacenar información localmente a través de la creación de índices invertidos. Toda la comunicación de esta infraestructura se gestionará mediante sockets TCP/UDP, integrando mecanismos P2P que permitirán el descubrimiento de nodos, el enrutamiento en la red, la propagación de las consultas y la agregación ordenada de los resultados locales.
 
 # 4. Fuera de alcance
 ¿Qué cosas deliberadamente no realizará el proyecto?
+
 Deliberadamente no indexará todo internet, debido a que resulta imposible para los fines de escalabilidad del proyecto; se restringirá únicamente a dominios específicos o universitarios, al igual que no dependerá de una infraestructura o entidad central (modelo cliente-servidor tradicional) para alojar, indexar o gestionar la información y no implementará algoritmos de ranking opacos ni utilizará publicidad pagada o posicionamiento optimizado que pueda sesgar la visibilidad y relevancia real de los resultados para el usuario. 
 
 # 5. MVP (Minimum Viable Product)
