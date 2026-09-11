@@ -1,7 +1,7 @@
 # Buscador-descentralizado
 
 # 1. Problema
-¿Qué situación, necesidad o problema quieren atender?
+¿Qué situación, necesidad o problema quieren atender?\n
 El problema central es que aunque los buscadores de internet tradicionales son funcionales,
 tienen limitaciones estructurales como falta de transparencia, resultados basura y
 dependencia a infraestructura centralizada. Estas características pueden restringir la
