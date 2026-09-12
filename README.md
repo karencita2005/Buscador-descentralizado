@@ -42,13 +42,13 @@ Deliberadamente no indexará todo internet, debido a que resulta imposible para 
 La versión mínima viable del proyecto consistirá en una red P2P de 3 a 5 nodos desarrollados en Python, operando en un entorno local o de red privada (por ejemplo, el dominio UDG), capaz de ejecutar el flujo completo de búsqueda sin depender de un servidor central. 
 
 Los componentes minimos funcionales serían:
-Red P2P y Comunicación: Nodos desarrollados en Python capaces de descubrirse entre sí y comunicarse mediante sockets (TCP/UDP) para transmitir peticiones de búsqueda. 
+* Red P2P y Comunicación: Nodos desarrollados en Python capaces de descubrirse entre sí y comunicarse mediante sockets (TCP/UDP) para transmitir peticiones de búsqueda. 
 
-Indexación y Almacenamiento Local: Cada nodo rastreará e indexará un conjunto acotado de documentos (páginas o archivos de dominios específicos), guardando su índice invertido en un almacenamiento local ligero (como archivos JSON o una base de datos embebida SQLite) en cada nodo. 
+* Indexación y Almacenamiento Local: Cada nodo rastreará e indexará un conjunto acotado de documentos (páginas o archivos de dominios específicos), guardando su índice invertido en un almacenamiento local ligero (como archivos JSON o una base de datos embebida SQLite) en cada nodo. 
 
-Propagación y Consolidación: Un nodo recibe la búsqueda del usuario, la propaga a los demás nodos de la red, consulta el índice local de cada uno y agrega los resultados coincidentes en una única respuesta.
+* Propagación y Consolidación: Un nodo recibe la búsqueda del usuario, la propaga a los demás nodos de la red, consulta el índice local de cada uno y agrega los resultados coincidentes en una única respuesta.
 
-Interfaz de Usuario Basada en Web: Una interfaz cliente sencilla desarrollada en HTML y CSS que se conecta al nodo local para permitir la entrada de palabras clave y mostrar los resultados consolidados de la red. 
+* Interfaz de Usuario Basada en Web: Una interfaz cliente sencilla desarrollada en HTML y CSS que se conecta al nodo local para permitir la entrada de palabras clave y mostrar los resultados consolidados de la red. 
 
 El proyecto demostrará que funciona si, al apagar uno de los nodos, la red sigue almacenando sus propios índices de datos, procesando consultas y entregando resultados a través de los nodos restantes sin caerse. 
 
